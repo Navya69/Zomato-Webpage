@@ -78,7 +78,71 @@
 
 
         </div>
+      
+      </section>
+
+      <section class="restaurant__list__container">
+        <div class="restaurant__list__text">
+          <h4 class="text-xl">Order From 100s of restaurants</h4>
+        </div>
+        <div class="restaurant__list__images__container">
+          <div class="restaurant__list__row_1">
+            <div>
+              <img src="./assets/restaurant1.jpg" alt="restaurant1" class="restaurant1">
+            </div>
+            <img src="./assets/restaurant2.jpg" alt="restaurant2" class="restaurant2">
+          </div>
+          <div class="restaurant__list__row_2">
+            <img src="./assets/restaurant3.jpg" alt="restaurant3" class="restaurant3">
+            <img src="./assets/restaurant4.jpg" alt="restaurant4" class="restaurant4">
+          </div>
+        </div>
+      </section>
+      <section class="email__subcribe__container">
+        <div>
+          <h1 class="text-xl">Stay Updated</h1>
+          <div class="email__subcribe__input__field">
+            <div>
+              <input
+                type="email"
+                placeholder="email@email.com"
+                class="email__input"
+              />
+            </div>
+            <button class="button__primary">Get Updates</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote__container">
+        <div class="quote_image_overlay"></div>
+        <h3 class="quote_image_text">
+          When a man's stomach is full it makes no difference whether he is rich
+          or poor.
+        </h3>
       </section>
     </main>
+    <footer>
+      <img src="./assets/logo.png" alt="logo" />
+      <ul>
+        <li>Pricing</li>
+        <li>Terms and condition</li>
+        <li>Partnership</li>
+        <li>Career</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+    <script>
+      const hamburgermenu = document.getElementById("hamburgermenu");
+      const mobileNavDropDown = document.querySelector(
+        ".mobile__navbar__items"
+      );
+      window.addEventListener("click", () => {
+        if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+          return mobileNavDropDown.classList.remove("hamburger__menu__close");
+        return mobileNavDropDown.classList.add("hamburger__menu__close");
+      });
+    </script>
+    
   </body>
 </html>
